@@ -5,11 +5,9 @@ import LoginPage from './views/LoginPage.jsx';
 import AddBookPage from './views/AddBookPage.jsx';
 import { selectUsers } from './store/usersSlice.js';
 import { useSelector } from 'react-redux';
-import { useState } from 'react';
 
 function App() 
 {
-  const [filterBy, setFilterBy] = useState("");
   const user = useSelector(selectUsers);
   return (
     <>  
